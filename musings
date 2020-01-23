@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="data/styles.css">
+    <title>Blog - Akillsers</title>
+  </head>
+  <body>
+  <header class="header container">
+    <div class="inner">
+        <div class="header-title"><a href="index">Akillsers</a></div>
+        <nav class="header-links">
+            <a href="portfolio">Portfolio</a>
+            <a href="musings">Blog</a>
+            <a href="about">About</a>
+        </nav>
+    </div>	
+  </header>
+  
+  
+  <main class="inner">
+	  <h1>Welcome to the blog archives!</h1>
+      <p>Select a blog post:</p>
+      <ul>
+        <li><a href="posts/jan-22-2020">Hello world!</li>
+      </ul>
+  </main>
+    
+  </body>
+</html>

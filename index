@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="data/styles.css">
+    <title>Portfolio - Akillsers</title>
+  </head>
+  <body class="dark">
+  <header class="header container">
+    <div class="inner">
+        <div class="header-title"><a href="index">Akillsers</a></div>
+        <nav class="header-links">
+            <a href="portfolio">Portfolio</a>
+            <a href="musings">Blog</a>
+            <a href="about">About</a>
+        </nav>
+    </div>	
+  </header>
+  
+  
+  <main>
+      <section class="inner">
+         <p>I like video games, physics, and math. I write a <a href="musings">blog</a> about anything that <a href="links">interests</a> me.</p>
+	     <p><a href="favourite-things">These</a> are some of my favourite things.</a>
+         <p>How can someone live the best possible life? Here's my <a href="life-tips">take</a>.     
+      </section>
+      
+     
+     </p>
+      
+  </main>
+    
+  </body>
+</html>

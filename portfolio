@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+  <link rel="stylesheet" type="text/css" href="data/styles.css">
+  </head>
+  <body>
+  <header class="header container">
+    <div class="inner">
+        <div class="header-title"><a href="index">Akillsers</a></div>
+        <nav class="header-links">
+            <a href="portfolio">Portfolio</a>
+            <a href="musings">Blog</a>
+            <a href="about">About</a>
+        </nav>
+    </div>	
+  </header>
+  
+  
+  <main class="inner">
+	  <h1>This page is currently under construction.</h1>
+  </main>
+    
+  </body>
+</html>

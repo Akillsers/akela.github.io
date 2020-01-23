@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="data/styles.css">
+    <title>Portfolio - Akillsers</title>
+  </head>
+  <body>
+  <header class="header container">
+    <div class="inner">
+        <div class="header-title"><a href="index">Akillsers</a></div>
+        <nav class="header-links">
+            <a href="../portfolio">Portfolio</a>
+            <a href="../musings">Blog</a>
+            <a href="../about">About</a>
+        </nav>
+    </div>	
+  </header>
+  
+  
+  <main class="inner">
+     <p>Hello world!</p>
+
+     <p>I’m starting a blog, and you’re reading the very first post! My name is Akela Ng and I’m in grade 12 (last year of high school) in Ontario.</p>
+
+     <p>A few of my interests are:</p>
+     <ul>
+        <li>Physics</li>
+        <li>Mathematics</li>
+        <li>Software development</li>
+        <li>Video games</li>
+     </ul>
+    
+     <p>Come to think about it, my interests are intimately connected. Each one is really an extension of my interest in video games. Many genres of games—like platformers, shooters, action-adventures, and simulation games, to name just a few—often implement aspects of classical mechanics. Games that use physics mechanics can be understood and modelled using the language of mathematics. Math is especially important in making a video game, especially ones with 3D graphics, but even some 2D ones too. And of course, games are software, built with cleverly designed code controlling.</p>
+
+     <p>When I was younger, I watched entire playthroughs of Legend of Zelda: Ocarina of Time and Brothers: A Tale of Two Sons on YouTube. Both are phenomenal games, taking the player on an adventure of a lifetime. The player at the beginning and at the end is not the same person, in multiple ways. You start as a little kid in Ocarina of Time, and by the end of the game, you’re be an adult who have defeated bosses upon bosses in diverse realms. The game Brothers has the player searching for a medicine from a far off line. By the end of the game (spoiler). I thought about the games and I said, “Wow! I want to make that.”</p>
+     <p>It never got any further than that. But I did toy around with Unity, among other game-creation tools. I followed a tutorial to create a simple multiplayer shooter, one for a 2d space shooter, and another one for a physics based games. One project I abandoned was an instrument tuning game where you have to tune the strings of a viola—I played the viola in school at that time. I also tried to make a tower defense game because I found that the game Bloons TD5 fascinating.</p>
+     <p>The summer before grade 11, I made a complete game from scratch (see source code). It’s seriously nothing to write home about; it’s just a pong clone. Besides, the code is an unmaintainable pile of feces. What’s somewhat interesting though is that I made a debug overlay system that captures variables each frame and you can play back the game state of the last 500 frames to tweak the AI.</p>
+
+	 <p>After the pong clone, I started work on a text editor for writing code. But it’s never gotten into any sort of usable state (ugh!). I was too ambitious and pedantic. First, I wanted to support complex script (Arabic, for example, requires complex text handling procedures). I wrote my own implementation of the Unicode Bidirectional Algorithm and used the Harfbuzz programming library to shape text runs. After that getting selection working was a pain. I think that selection right now is still extremely buggy. Then, I wanted to have tabs in the title bar as Chrome or Microsoft Word does. That took many weeks and I think that I just kind of quit at that point.</p>
+	 <p>So I decided that starting over was the best thing to do. This time I was going to keep things simple. No tabs in titlebars and no complex script. No external font code either. I was going to parse BDF font files and render fonts myself. To this end, I made Typed. (Naturally, it’s nowhere near complete). </p>
+
+
+     <p>Then I decided that I don’t really need a code editor. What I instead needed was a journalling program that could. So I copied the code for Typed and made Noted.</p>
+
+
+     <p>I haven’t worked on any of my projects in the past few months, mainly focusing on school instead. But I hope to get back to some sort of programming type thing.</p>
+     <p>Until next time, have a good one.</p>
+
+	  
+      
+
+  </main>
+    
+  </body>
+</html>
