@@ -4,13 +4,27 @@
     src: url('Roboto-Regular.ttf');
 }
 
+
 .os-warning
 {
     background-color: maroon;
     margin: 1em 4em;
     margin-top: inherit;
     color: #ccc;
-    display: none;
+    //display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .os-warning
+    {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.warning-text
+{
+    overflow: auto;
 }
 
 .byline
@@ -25,9 +39,10 @@
 
 .warning-icon
 {
-    width: 8%;
-    margin: 8px;
-    margin-right: 16px;
+    float: left;
+    width: 4.5rem;
+    padding: 8px;
+    padding-right: 16px;
     float: left;
     user-select: none;
 }
@@ -47,12 +62,13 @@ hr.version-divider
 
 
 .os-warning p{
-    margin: 10px 15px;
+    margin: 5px 5px;
 }
 
 .inner
 {
-    max-width: 50rem;
+    padding: 0 1.25rem;
+    max-width: 52.5rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -98,6 +114,11 @@ body
     color: inherit;
 }
 
+.no-space-after
+{
+    margin-bottom: 0;
+}
+
 .section-heading
 {
     margin-bottom: 1rem;
@@ -138,6 +159,8 @@ ul
     background-color: #e91e63;
     cursor: pointer;
     color: white;
+    display: inline-block;
+    text-decoration: none;
 }
 
 h1
@@ -191,6 +214,7 @@ main
 
 *
 {
+    box-sizing: border-box;
     font-family: Roboto;
     margin: 0;
     padding: 0;
