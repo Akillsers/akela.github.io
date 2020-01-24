@@ -4,6 +4,52 @@
     src: url('Roboto-Regular.ttf');
 }
 
+.os-warning
+{
+    background-color: maroon;
+    margin: 1em 4em;
+    margin-top: inherit;
+    color: #ccc;
+    display: none;
+}
+
+.byline
+{
+    color: #bbb;
+}
+
+.section-heading small
+{
+    color: #bbb;
+}
+
+.warning-icon
+{
+    width: 8%;
+    margin: 8px;
+    margin-right: 16px;
+    float: left;
+    user-select: none;
+}
+
+
+.dark hr
+{
+    border-color: #222;
+    margin: 15px 0;
+}
+
+hr.version-divider
+{
+    margin-top: 5rem;
+}
+
+
+
+.os-warning p{
+    margin: 10px 15px;
+}
+
 .inner
 {
     max-width: 50rem;
@@ -50,6 +96,48 @@ body
 {
     text-decoration: none;
     color: inherit;
+}
+
+.section-heading
+{
+    margin-bottom: 1rem;
+}
+
+.project-title
+{
+    font-size: 2.5em;
+    margin-bottom: 0;
+}
+
+.byline
+{
+    margin-top: 0;
+}
+
+section
+{
+    padding-bottom: 3rem;
+}
+
+ul
+{
+    padding-inline-start: 40px;
+}
+
+.button:hover
+{
+    background-color: #b32253;
+}
+
+.button
+{
+    user-select: none;
+    border: none;
+    font-size: 1rem;
+    padding: 8px 16px;
+    background-color: #e91e63;
+    cursor: pointer;
+    color: white;
 }
 
 h1
@@ -106,4 +194,5 @@ main
     font-family: Roboto;
     margin: 0;
     padding: 0;
+    text-size-adjust: 100%;
 }

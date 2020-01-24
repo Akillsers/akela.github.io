@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="data/styles.css">
+    <title>Portfolio - Akillsers</title>
+  </head>
+  <body class="dark">
+  
+  
+  <main>
+      <section class="inner">
+         <h1 class="project-title">Noted</h1>
+         <p class="byline">by <a href="index">Akillsers</a></p>
+         <section class="noted-latest noted-release">
+            <div class ="section-heading">
+                <h2>v0.1</h2>
+                <small>Latest version</small>
+            </div>
+            
+            <p>This is the first ever release of Noted. It's nowhere near usable and you can't do anything with this.</p>
+            <div id="os-warning" class="os-warning container">
+                <img class="warning-icon" src="data/alert.svg"><p>It appears that you are running an operating system other than Windows. <br>Noted is currently only supported on Windows.</p>
+            </div>
+            <a class="button" href="data/noted v0.1.exe" title="Get Noted for Windows" download>Download</a>
+         </section>
+         <section class="noted-next noted-release">
+             <div class="section-heading">
+                <h2>v0.2</h2>
+                <small id = "countdown"></small>
+             </div> 
+                <p>Planned changes and features</p>
+                <ul>
+                    <li>Center dates on calendar.</li>
+                    <li>Fix calendar inaccuracies.</li>
+                    <ul>
+                        <li>Start months on the right day.</li>
+                        <li>Get the right number of days for each month.</li>
+                        <li>Make the coloring accurately reflect days in current month.</li>
+                    </ul>
+                    <li>Fix textbox sometimes not going back to caret/insert mode</li>
+                </ul>
+
+             
+         </section>
+         <hr class="version-divider">
+         <p>View all <a href="https://github.com/Akillsers/noted/releases">releases<a>.</p>
+         
+
+         <script>
+            var countDownDate = new Date("Jan 25 2020 15:30:00 GMT-0500");
+            const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            var ampm = countDownDate.getHours() > 12 ? ' p.m.' : ' a.m.';
+            var hours = countDownDate.getHours();
+            hours %= 12;
+            if(!hours) hours = '12';
+            document.getElementById("countdown").innerHTML = "Coming on " + monthNames[countDownDate.getMonth()] + " " + countDownDate.getDate() + " or earlier.";
+            
+            
+            if (navigator.appVersion.indexOf("Win") == -1)
+                document.getElementById("os-warning").style.display = "block";
+         </script>
+      </section>
+      
+     
+     
+      
+  </main>
+    
+  </body>
+</html>
