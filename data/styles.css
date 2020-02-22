@@ -14,27 +14,7 @@
     //display: none;
 }
 
-.right-floating
-{
-    float: right;
-    margin-left: 1em;
-}
 
-.left-floating
-{
-    float: left;
-    margin-right: 1em;
-}
-
-.thirty-width
-{
-    width: 30%;
-}
-
-.forty-width
-{
-    width: 40%;
-}
 
 img
 {
@@ -46,6 +26,34 @@ img
     {
         margin-left: 0;
         margin-right: 0;
+    }
+    
+    .right-floating, .left-floating
+    {
+        margin-bottom: 1em;
+    }
+}
+
+@media only screen and (min-width: 600px)
+{
+    .thirty-width
+    {
+        width: 30%;
+    }
+    .forty-width
+    {
+        width: 40%;
+    }
+    .right-floating
+    {
+        float: right;
+        margin-left: 1em;
+    }
+
+    .left-floating
+    {
+        float: left;
+        margin-right: 1em;
     }
 }
 
