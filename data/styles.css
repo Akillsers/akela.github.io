@@ -20,6 +20,12 @@
     margin-left: 1em;
 }
 
+.left-floating
+{
+    float: left;
+    margin-right: 1em;
+}
+
 .thirty-width
 {
     width: 30%;
