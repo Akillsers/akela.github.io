@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="../data/styles.css">
+    <title>Vectors and Games - Akillsers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+  <header class="header container">
+    <div class="inner">
+        <div class="header-title"><a href="../index.html">Akillsers</a></div>
+        <nav class="header-links">
+            <a href="../musings.html">Blog</a>
+            <a href="../about.html">About</a>
+        </nav>
+    </div>	
+  </header>
+  
+  
+  <main class="inner">
+     <h1 class="article-title">Vectors and games</h1>
+     <div class="article-info">
+         <div class="article-byline">by Akela Ng</div>
+         <span class="article-bydate-separate">|</span>
+         <div class="article-dateline">March 11, 2020</div>
+     </div class="article-info">
+     <p>The most basic problems in game programming are solved using vectors and simple operations like vector addition and vector subtraction.</p>
+     <h2 class="article-heading">The problem</h2>
+     <p>A mage shoots a fireball at the player. All fireballs move at a constant rate of 4 (in-game) meters per second. You are given the coordinates, in meters, of the mage and player as shown below. How many meters should the game move the mage’s fireball in the x-direction and the y-direction every second? In other words, what are the components of the velocity of the fireball, in m/s?</p>
+     
+     <img class="bordered"src="../data/vectors-and-games/coords.png" alt="Illustration of the problem.">
+     <h2 class="article-heading">Solution</h2>
+     <p>First, recognize that the coordinates are the components of the two entity's position vector from the origin.</p>
+
+     <p>In physics class, we typically write vectors as their magnitudes and directions; however, vectors can also be treated as the value of their components. This is much easier for computers to work with. In <strong>component notation</strong> (shown below), vectors are written as an ordered pair of their x-axis and y-axis components.</p>
+     <img src="../data/vectors-and-games/position-vectors.png" alt="Position vectors" title="Vectors representing the position of the player and the mage from the origin.">
+     <p>We can get a vector that points from the mage toward the enemy using <strong>vector subtraction</strong>. Graphically, <span class="vector">v<sub>a</sub></span> - <span class="vector">v<sub>b</sub></span> is a vector that points tip-to-tip toward <span class="vector">v<sub>a</sub></span> (the vector to be subtracted from). A diagram of <span class="vector">d<sub>p</sub></span> - <span class="vector">d<sub>e</sub></span> is shown below.</p>
+     <img src="../data/vectors-and-games/vector-diagram.png" alt="Vector diagram showing the subraction of the vector subtraction of dp - de.">
+     <p>Vector subtraction is defined as the <strong>component-wise</strong> subtraction of the vectors. So finding the components of <span class="vector">dp</span> - <span class="vector">de</span> is as easy as doing subtracting the x’s and subtracting the y’s, as shown below:</p>
+     <img src="../data/vectors-and-games/answer-1.png" alt="Vector diagram showing the result of the vector subtraction of dp - de.">
+     <p>Great! We now have a vector that points in the direction which the fireball needs to go: <strong>d<sub>e</sub></strong> - <strong>d<sub>p</sub></strong> = (9, -7). The length (also called magnitude) of this vector, which you can find by using Pythagorean theorem on the vector’s components, is √130 or approximately 11.4 meters. This is the distance between the player and the enemy, which is useful for purposes like detecting when the player is close enough to be seen by an enemy or when the player is close enough to interact with a door or an NPC. For the fireball’s velocity, we really care about the direction of <span class="vector">d<sub>e</sub></span> - <span class="vector">d<sub>p</sub></span>, since the fireball will be going at a set speed regardless of how far away the player is. So let’s change <span class="vector">d<sub>e</sub></span> - <span class="vector">d<sub>p</sub></span> in such a way that its direction stays the same but its length is clamped down to 1 meter; let’s normalize <span class="vector">d<sub>e</sub></span> - <span class="vector">d<sub>p</sub></span>. Normalizing a vector involves dividing each of the vector’s components by the length of the vector.</p>
+     <img src="../data/vectors-and-games/normalized.png" alt="The normalized vector.">
+     <p>Lastly, we need to multiply the normalized vector by 5 since the fireball needs to travel a distance of 5 meters in one second. Graphically, <strong>vector multiplication</strong> keeps the vector’s direction the same but stretches the length of the vector by whatever you multiply the vector by. So multiplying the normalized vector, with length 1, by 5 gives a vector with a length of 1 * 5 = 5. This vector is the displacement that the fireball needs to travel in a second, so the velocity of the fireball is the same as this vector but with units changed from meters to meters per second. Algebraically, vector multiplication by a <strong>scalar</strong> is found by multiplying each of the vector’s components by that scalar. The result is shown below.</p>
+     <img src="../data/vectors-and-games/scaled.png" alt="The scaled vector.">
+     <h2 class="article-heading">Extension challenge</h2>
+     <p>Instead of aiming at the player’s current position, what if the mage aimed such that it hits the player as it moves at a constant velocity? For a player at the position (10, 5) in meters when the fireball is shot and travelling at a constant velocity of (5, 9) in meters per second, what should the velocity of a fireball which travels at a speed of 5 m/s be?. I will post the solution to this challenge in the next blog post.</p>
+  </main>
+    
+  </body>
+</html>
