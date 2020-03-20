@@ -55,6 +55,12 @@ main.inner
     padding-top: 1rem;
 }
 
+
+h1
+{
+    font-size: 2em;
+}
+
 .header-title a
 {
     display: block;
