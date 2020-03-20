@@ -39,7 +39,7 @@
 }
 */
 
-section::after {
+.container::after {
   content: "";
   clear: both;
   display: table;
@@ -57,12 +57,18 @@ main.inner
 
 .header-title a
 {
-    padding: 0.2em 0;
+    display: block;
+    padding-top: 1.0rem;
+    padding-bottom: 0.7rem;
+    font-size: 1.8rem;
 }
 
 .header-links a
 {
-    padding: 1.5em 0.25em;
+    padding-top: 1.7rem;
+    padding-bottom: 0.8rem;
+    padding-right: 0.2rem;
+    display: inline-block;
 }
 
 .blog-date-info
@@ -229,12 +235,6 @@ hr.version-divider
     color: white;
 }
 
-.header-title
-{
-    padding-top: 0.9rem;
-    font-size: 1.8rem;
-}
-
 .article-title
 {
     /*This is currently the same as header-title*/
@@ -266,12 +266,6 @@ hr.version-divider
     display: inline-block;
     margin-top: 0;
     font-size: 0.8rem;
-}
-
-.header-links
-{
-    padding-top: 1.6rem;
-    padding-bottom: 0.7rem;
 }
 
 .interests
@@ -390,10 +384,6 @@ a:active
     text-decoration: underline;
 }
 
-.container
-{
-    overflow: hidden;
-}
 
 .header-title
 {
