@@ -1,13 +1,5 @@
 @font-face
 {
-    font-family: 'Roboto-Thin';
-    font-weight: 100;
-    font-style: normal;
-    src: url('Roboto-Regular.ttf');
-}
-
-@font-face
-{
     font-family: 'Roboto';
     font-weight: normal;
     font-style: normal;
@@ -58,7 +50,7 @@ section
     padding-top: 1rem;
 }
 
-main.inner, main.expanded-inner
+main.inner, main.expanded-inner, main .expanded-inner
 {
     padding-top: 1rem;
 }
@@ -112,10 +104,16 @@ h1
     border: 3px solid black;
 }
 
+h3
+{
+    font-size: 1.08rem;
+    margin-bottom: 0.3rem;
+}
+
 .vector
 {
     font-weight: bold;
-    font-family: serif;
+    font-family: "Times New Roman", serif;
 }
 
 sub
@@ -229,6 +227,7 @@ hr
     border-color: #aaa;
     border-width: 1px 0 0 0;
     margin-bottom: 1em;
+    border-style: solid;
 }
 
 hr.version-divider
@@ -253,7 +252,7 @@ hr.version-divider
 {
     padding-left: 1em;
     padding-right: 1em;
-    max-width: 62.5rem;
+    max-width: 58.5rem;
     margin-left: auto;
     margin-right: auto;
 }
