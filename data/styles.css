@@ -178,14 +178,13 @@ h1
 {
     display: block;
     padding-top: 1.0rem;
-    padding-bottom: 0.7rem;
     font-size: 1.8rem;
 }
 
 .header-links a
 {
     padding-top: 1.7rem;
-    padding-bottom: 0.8rem;
+    padding-bottom: 0.75rem;
     padding-right: 0.2rem;
     display: inline-block;
 }
@@ -324,13 +323,6 @@ img
     user-select: none;
 }
 
-
-.dark hr
-{
-    border-color: #222;
-    margin: 15px 0;
-}
-
 img
 {
     width: 100%;
@@ -343,7 +335,7 @@ img
 
 hr
 {
-    border-color: #aaa;
+    border-color: rgb(180, 180, 180);
     border-width: 1px 0 0 0;
     margin-bottom: 1em;
     border-style: solid;
@@ -535,6 +527,13 @@ a:active
     color: hotpink;
 }
 
+header hr
+{
+    width: 90px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
 .header a:hover
 {
     text-decoration: underline;
@@ -548,7 +547,6 @@ a:active
 
 .header-links
 {
-    float: left;
     margin-left: 2rem;
     text-align: center;
 }
