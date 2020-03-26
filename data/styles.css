@@ -107,10 +107,17 @@ a
 {
     .article-item img
     {
+        margin-bottom: 0;
         float: left;
         width: 40%;
         margin-right: 1rem;
     }
+    
+    .article-item
+    {
+        margin-bottom: 1rem;
+    }
+    
     .article-items
     {
         display:block;
@@ -508,10 +515,14 @@ a
     color: inherit;
 }
 
+.article-item p
+{
+    margin-bottom: 0;
+}
+
 .article-item a:focus
 {
-    outline-color: white;
-    outline-style: dotted;
+    outline: 2px solid blanchedalmond;
 }
 
 a:active
@@ -522,7 +533,6 @@ a:active
 .article-item a:hover
 {
     color: hotpink;
-    outline-style: none;
 }
 
 .header a:hover
