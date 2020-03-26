@@ -91,6 +91,18 @@ a
     user-select: text;
 }
 
+
+.article-item a
+{
+    display: block;
+}
+
+.article-item:hover img
+{
+    opacity:80%;
+}
+
+
 @media only screen and (max-width: 900px)
 {
     .article-item img
@@ -127,8 +139,6 @@ a
         width: 100%;
     }
 }
-
-
 
 section
 {
@@ -498,9 +508,21 @@ a
     color: inherit;
 }
 
+.article-item a:focus
+{
+    outline-color: white;
+    outline-style: dotted;
+}
+
 a:active
 {
     color: hotpink;
+}
+
+.article-item a:hover
+{
+    color: hotpink;
+    outline-style: none;
 }
 
 .header a:hover
@@ -511,7 +533,7 @@ a:active
 
 .header-title
 {
-    float: left;
+    float: left; 
 }
 
 .header-links
