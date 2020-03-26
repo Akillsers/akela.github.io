@@ -55,6 +55,11 @@ main.inner, main.expanded-inner, main .expanded-inner
     padding-top: 1rem;
 }
 
+.spacer
+{
+    height: 1rem;
+}
+
 h1
 {
     font-size: 2em;
@@ -136,6 +141,11 @@ img
     {
         margin-bottom: 1em;
     }
+    
+    .inner-desktop hr
+    {
+        display: none;
+    }
 }
 
 .centered
@@ -147,6 +157,15 @@ img
 
 @media only screen and (min-width: 600px)
 {
+    .inner-desktop
+    {
+        padding-left: 1.2em;
+        padding-right: 1.2em;
+        max-width: 43.5rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
     .thirty-width
     {
         width: 30%;
@@ -163,8 +182,6 @@ img
     {
         width: 50%;
     }
-    
-
     
     .right-floating
     {
@@ -240,17 +257,17 @@ hr.version-divider
 
 .inner
 {
-    padding-left: 1em;
-    padding-right: 1em;
-    max-width: 42.5rem;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    max-width: 43.5rem;
     margin-left: auto;
     margin-right: auto;
 }
 
 .expanded-inner
 {
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
     max-width: 58.5rem;
     margin-left: auto;
     margin-right: auto;
@@ -258,8 +275,8 @@ hr.version-divider
 
 .contracted-inner
 {
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
     max-width: 32.5rem;
     margin-left: auto;
     margin-right: auto;
