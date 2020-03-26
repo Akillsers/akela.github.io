@@ -45,6 +45,91 @@
   display: table;
 }
 
+.article-item a
+{
+    text-decoration: none;
+}
+
+.header
+{
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.article-item
+{
+    width: 47.9%;
+}
+.article-items
+{
+    display:flex;
+    justify-content: space-between;
+}
+
+.article-pair
+{
+    display: flex;
+    justify-content: space-between;
+    width: 48.9%;
+}
+
+.article-item h1
+{
+    font-size: 1.1rem;
+}
+
+.article-item p
+{
+    font-size: 0.8rem;
+    color: #ccc;
+    line-spacing: 0.5rem;
+}
+
+a
+{
+    user-select: text;
+}
+
+@media only screen and (max-width: 900px)
+{
+    .article-item img
+    {
+        float: left;
+        width: 40%;
+        margin-right: 1rem;
+    }
+    .article-items
+    {
+        display:block;
+        justify-content: space-between;
+    }
+
+    .article-pair
+    {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 620px){
+    .article-item img
+    {
+        width: 30%;
+    }
+    .article-pair
+    {
+        display:block;
+    }
+    .article-item 
+    {
+        width: 100%;
+    }
+}
+
+
+
 section
 {
     padding-top: 1rem;
@@ -62,7 +147,8 @@ main.inner, main.expanded-inner, main .expanded-inner
 
 h1
 {
-    font-size: 2em;
+    margin-bottom: 0.5em;
+    font-size: 1.6rem;
 }
 
 .contrast
@@ -326,13 +412,6 @@ hr.version-divider
     background-color: darkslategray;
 }
 
-.header
-{
-    background-color: black;
-    color: white;
-    min-width: 300px;
-}
-
 h2 .article-heading
 {
     font-size: 1rem;
@@ -399,15 +478,10 @@ section
     text-decoration: none;
 }
 
-h1
-{
-    margin-bottom:1rem;
-}
-
 p
 {
     margin-bottom:1em;
-    line-height: 1.55rem;
+    line-height: 1.5em;
     font-size: 1.08rem;
 }
 
