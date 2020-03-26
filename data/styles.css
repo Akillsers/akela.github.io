@@ -349,25 +349,18 @@ img
     background-color: rgb(0, 0, 0, 0.7);
     text-align: center;
     line-height: 100vh;
-    cursor: pointer;
 }
 
 #image-viewer img
 {
-    display: block;
+    display: inline;
     width: auto;
     max-height: 80vh;
     margin: 0;
+    vertical-align: middle;
     user-select: none;
 }
 
-#image-viewer .image-area
-{
-    display: inline-block;
-    vertical-align: middle;
-    padding: 0 3rem;
-    cursor: default;
-}
 
 #image-viewer .close
 {
@@ -378,6 +371,8 @@ img
     width: 30px;
     cursor: pointer;
     fill: #999;
+    border: none;
+    background-color: transparent;
 }
 
 #image-viewer .close:hover
