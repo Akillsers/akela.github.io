@@ -330,6 +330,7 @@ hr.version-divider
 {
     background-color: black;
     color: white;
+    min-width: 300px;
 }
 
 h2 .article-heading
