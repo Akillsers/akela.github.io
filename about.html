@@ -4,6 +4,7 @@
     <title>About - Akillsers</title>
     <link rel="stylesheet" type="text/css" href="data/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="data/image-viewer.js"></script>
   </head>
   <body>
   <header class="container">
@@ -22,8 +23,7 @@
          <div class="inner">
             <h1>About Akela</h1>
             <div class="text">
-                
-                <img src="data/akela-cropped.png" class="forty-width right-floating" alt="Photo of Akela in 2019.">
+                <img onclick="view_image('data/akela.jpg')" src="data/akela-cropped.png" class="viewable forty-width right-floating" alt="Photo of Akela in 2019.">
                 <p>My dream is to help kids learn math and physics (and to make a living doing that). I want to be the greatest teacher I can be. This will require very hard work during both university and my teaching career. I’m prepared to make that sacrifice.</p>
                 <p><span class="em-dash">—</span> Akela</p>
                 
@@ -33,5 +33,10 @@
      </section>
   </main>
     
+  <div onclick="viewer_click(event)" id="image-viewer">
+    <svg class="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2541 2541" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"><path d="M29 172c-39-39-39-103 0-142s103-39 142 0l1099 1099L2369 30c39-39 103-39 142 0s39 103 0 142L1412 1271l1099 1099c39 39 39 103 0 142s-103 39-142 0L1270 1413 171 2512c-39 39-103 39-142 0s-39-103 0-142l1099-1099L29 172z" fill-rule="nonzero"/></svg>
+    <img src="data/akela.jpg">
+  </div>
+  
   </body>
 </html>
