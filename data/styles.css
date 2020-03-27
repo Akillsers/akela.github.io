@@ -37,6 +37,7 @@
     font-size: 1.3rem;
     font-weight: bold;
     text-decoration: none;
+    margin-bottom: 1rem;
 }
 
 .action-button:hover
