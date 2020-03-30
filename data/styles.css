@@ -596,12 +596,12 @@ a:active
 
 header hr
 {
-    width: 170px;
+    width: 130px;
     margin: 0 auto;   
     margin-top: 10px;
     border: 0;
     height: 1px;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 255), rgba(170, 170, 170, 255), rgba(255, 255, 255, 255));
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 255), rgba(170, 170, 170, 255) 10%, rgba(170, 170, 170, 255) 90%, rgba(255, 255, 255, 255));
 }
 
 .dark header hr
