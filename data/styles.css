@@ -229,7 +229,7 @@ h3
     font-family: "Times New Roman", serif;
 }
 
-sub
+sup, sub
 {
     line-height: 0;
 }
@@ -606,7 +606,7 @@ header hr
 
 .dark header hr
 {
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.8) 10%, rgba(255, 255, 255, 0.8) 90%, rgba(0, 0, 0, 0));
 }
 
 .header a:hover
