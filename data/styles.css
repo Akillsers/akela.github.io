@@ -45,6 +45,11 @@
     text-decoration: underline;
 }
 
+.margin-bottom-hack
+{
+    margin-bottom: 15rem;
+}
+
 .container::after {
   content: "";
   clear: both;
