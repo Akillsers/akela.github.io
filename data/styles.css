@@ -596,9 +596,17 @@ a:active
 
 header hr
 {
-    width: 90px;
-    margin: 0 auto;
+    width: 170px;
+    margin: 0 auto;   
     margin-top: 10px;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 255), rgba(170, 170, 170, 255), rgba(255, 255, 255, 255));
+}
+
+.dark header hr
+{
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
 }
 
 .header a:hover
