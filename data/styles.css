@@ -299,13 +299,13 @@ img
     .right-floating
     {
         float: right;
-        margin-left: 1em;
+        margin-left: 1.5rem;
     }
 
     .left-floating
     {
         float: left;
-        margin-right: 1em;
+        margin-right: 1.5rem;
     }
 }
 
