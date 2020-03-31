@@ -92,13 +92,6 @@
     line-spacing: 0.5rem;
 }
 
-/*
-a:visited
-{
-    color: #3529b1
-}
-*/
-
 a
 {
     color: inherit;
@@ -277,14 +270,18 @@ img
     margin-bottom: 1em;
 }
 
+.inner-desktop hr
+{
+    display: none;
+}
 
 @media only screen and (min-width: 730px)
-{
+{  
     .inner-desktop hr
     {
-        display: none;
+        display: block;
     }
-    
+
     .margin-bottom-hack
     {
         margin-bottom: 8.5rem;
