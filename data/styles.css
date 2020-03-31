@@ -368,7 +368,7 @@ img
 {
     display: inline;
     width: auto;
-    max-height: 80vh;
+    max-height: 80%;
     margin: 0;
     vertical-align: middle;
     user-select: none;
