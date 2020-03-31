@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="../data/styles.css">
+    <title>Timeline Conundrum - Akillsers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+  <header class="container">
+    <div class="header">
+        <div class="header-title"><a href="../index.html">Akillsers</a></div>
+        <nav class="header-links">
+            <a href="../musings.html">Blog</a>
+            <a href="../about.html">About</a>
+        </nav>
+    </div>
+    <hr class="header-bottom-separator">
+  </header>
+  
+  <main>
+    <div class="spacer"></div>
+    <div class="inner">
+      <h1 class="article-title">Timeline conundrum</h1>
+      <div class="article-info">
+        <div class="article-byline">by Akela Ng</div>
+        <span class="article-bydate-separate">●</span>
+        <div class="article-dateline">March 31, 2020</div>
+      </div class="article-info">
+    
+      <p>I had the idea for this problem while watching a YouTube livestream about the coronavirus pandemic. I challenge you to try this problem without looking at the solution. This is easily solved with some basic algebra. Even if you haven’t learned that, you can probably figure out the solution after some thought. If you'd like, send me an <a href="mailto:akillsers@gmail.com">email</a> and tell me how you fared!</p>
+      <h2>The problem</h1>
+      <img src="../data/timeline.png" alt="Illustration of problem."></img>
+      <p>Josh is watching a live broadcast on YouTube. He notices that he joined late, so he rewinds to the beginning of the livestream, 25 minutes and 18 seconds ago. After 45 seconds, he starts watching the livestream at 1.5 times speed to save time. (Previously, he was watching at normal speed). The stream is set to end 51 minutes from when Josh switches the playback speed. Will Josh be able to catch up and watch the stream live? If so, how long would the stream have been running for when he starts watching live?</p>
+      
+      <h2>Solution</h1>
+      <p>When Josh jumps to the beginning of the livestream, the live stream has already been running for 1518 seconds (25 minutes and 8 seconds). Forty-five seconds later, he is 45 seconds from the beginning of the livestream (no way!), and the livestream has been running for 1518 + 45 = 1563 seconds.</p>
+      
+      <p>At that point he watches the livestream at 1.5 times speed while the broadcaster continues to stream one second of video every second. If <span class="variable">t</span> seconds elapse since Josh switches to 1.5x playback speed, then <span class="variable">d<sub>j</sub></span> = 45 + 1.5<span class="variable">t</span>, where <span class="variable">d<sub>j</sub></span> is the number of seconds into the stream that Josh is at. Similarly, the number of seconds <span class="variable">d<sub>l</sub></span> that the livestream has been running for is <span class="variable">d<sub>l</sub></span> = 1563 + <span class="variable">t</span>.</p>
+      
+      <p>When Josh catches up and begins watching live, <span class="variable">d<sub>j</sub></span> and <span class="variable">d<sub>l</sub></span> is equal. Set <span class="variable">d<sub>j</sub></span> = <span class="variable">d<sub>l</sub></span>, and solve for 
+      <span class="variable">t</span>.</p>
+      
+      <p>
+      <span class="variable">d<sub>j</sub></span> = <span class="variable">d<sub>l</sub></span><br>
+      1.5<span class="variable">t</span> + 45 = <span class="variable">t</span> + 1563<br>
+      <span class="variable">t</span> = 3036
+      </p>
+
+      <p>So when Josh catches up, it will be 3036 seconds after he had changed the playback speed. Using the equation <span class="variable">d<sub>l</sub></span> = 1563 + <span class="variable">t</span>, we see that the livestream has been running for <span class="variable">d<sub>l</sub></span> = 1563 + 3036 = 4599 seconds. The stream is set to end 51 minutes after Josh switches playback speed, Josh switches the playback speed 45 seconds after playing the broadcast from the beginning, and the stream has been running for 1518 seconds when Josh starts playing the stream from the beginning. So the scheduled running time of the stream is 1518 seconds + 45 seconds + 51 minutes = 1518 s + 45 s + 3060 s = 4623 seconds. Therefore Josh will be able to watch the stream live with 4623 - 4599 = 24 seconds to spare! He can say goodbye in the chat as the presenter signs off!</p>
+      
+      <h2>Extension challenge</h2>
+      <p>What is the shortest time that Josh could have switched the playback speed so that he watches the last three seconds of the stream live? Assume that the stream ends on time and lasts exactly 4623 seconds.</p>
+      <p><strong>Answer</strong>: 66 seconds.</p>
+    </div class="inner">
+    
+    </div>
+  </main>
+    
+  </body>
+</html>
