@@ -276,15 +276,14 @@ img
 {
     margin-bottom: 1em;
 }
-    
-.inner-desktop hr
-{
-    display: none;
-}
 
 
 @media only screen and (min-width: 730px)
 {
+    .inner-desktop hr
+    {
+        display: none;
+    }
     
     .margin-bottom-hack
     {
