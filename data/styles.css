@@ -258,12 +258,6 @@ a
     vertical-align: bottom;
 }
 
-section
-{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
 main.inner, main.expanded-inner, main .expanded-inner
 {
     padding-top: 2.0rem;
