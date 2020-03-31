@@ -101,11 +101,20 @@ a:visited
 
 a
 {
-    color: #0058dc;
+    color: inherit;
     user-select: text;
+}
+
+.blog-listing a
+{
+    color: inherit;
     text-decoration: none;
 }
 
+.blog-listing p
+{
+    margin-bottom: 0.45em;
+}
 
 .article-item a
 {
@@ -279,7 +288,7 @@ img
     
     .margin-bottom-hack
     {
-        margin-bottom: 12rem;
+        margin-bottom: 8.5rem;
     }
     
     .inner-desktop
@@ -564,11 +573,6 @@ p
     margin-bottom:1em;
     line-height: 1.5em;
     font-size: 1.08rem;
-}
-
-p:last-child
-{
-    margin-bottom: 0;
 }
 
 ul
