@@ -43,6 +43,11 @@
     margin-bottom: 0;
 }
 
+.featured-article-info .text-area
+{
+    margin-top: 2rem;
+}
+
 .action-button
 {
     display: block;
@@ -266,7 +271,7 @@ main.inner, main.expanded-inner, main .expanded-inner
 
 h1
 {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.67em;
     font-size: 1.6rem;
 }
 
@@ -624,6 +629,7 @@ body
 {
     background-color: #fff;
     font-family: Roboto, serif;
+    margin: 8px
 }
 
 .header a
