@@ -43,11 +43,6 @@
     margin-bottom: 0;
 }
 
-.featured-article-info .text-area
-{
-    margin-top: 2rem;
-}
-
 .action-button
 {
     display: block;
@@ -204,7 +199,17 @@ a
     margin-bottom: 0;
 }
 
+.featured-article-info .text-area
+{
+    margin-top: 1.2rem;
+}
+
 @media only screen and (max-width: 690px){
+    .featured-article-info .text-area
+    {
+        margin-top: 0;
+    }
+    
     .article-item img
     {
         width: 35%;
@@ -227,7 +232,7 @@ a
     
     .featured-article
     {
-        margin-bottom: 1rem;
+        margin-bottom: 2.0rem;
     }
     
     .featured-article h1
@@ -261,7 +266,7 @@ section
 
 main.inner, main.expanded-inner, main .expanded-inner
 {
-    padding-top: 1rem;
+    padding-top: 2.0rem;
 }
 
 .spacer
