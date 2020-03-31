@@ -242,6 +242,12 @@ a
     }
 }
 
+.expand-arrow
+{
+    display: inline-block;
+    vertical-align: bottom;
+}
+
 section
 {
     padding-top: 1rem;
@@ -290,6 +296,27 @@ h1
     color: #777;
     font-size: 0.75rem;
     margin-left: 0.6rem;
+}
+
+.side-button
+{
+    color: #777;
+    font-size: 0.75rem;
+    margin-left: 0.5rem;
+    font-weight: normal;
+    cursor: pointer;
+    vertical-align: middle;
+    user-select: none;
+}
+
+.side-button:hover
+{
+    text-decoration: underline;
+}
+
+.side-button:active
+{
+    color: #444;
 }
 
 .os-warning
@@ -663,7 +690,24 @@ ul
     outline: 2px solid blanchedalmond;
 }
 
-a:active
+.hidden
+{
+    display: none;
+}
+
+.clickable
+{
+    font-style: italic;
+    cursor: pointer;
+    user-select: none;
+}
+
+.clickable:hover
+{
+    text-decoration: underline;
+}
+
+a:active, .clickable:active
 {
     color: hotpink;
 }
