@@ -258,11 +258,6 @@ a
     vertical-align: bottom;
 }
 
-main.inner, main.expanded-inner, main .expanded-inner
-{
-    padding-top: 1.0rem;
-}
-
 .spacer
 {
     height: 1rem;
