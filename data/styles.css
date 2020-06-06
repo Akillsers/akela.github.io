@@ -9,6 +9,14 @@
 @font-face
 {
     font-family: 'Roboto';
+    font-weight: 200;
+    font-style: normal;
+    src: url('Roboto-Light.ttf');
+}
+
+@font-face
+{
+    font-family: 'Roboto';
     font-weight: normal;
     font-style: italic;
     src: url('Roboto-Italic.ttf');
@@ -37,9 +45,18 @@
     user-select: none;
 }
 
+.featured-article-info small
+{
+    margin-top: 0.3rem;
+    color: #ccc;
+    font-size: 0.8rem;
+    display: block;
+    font-weight: normal;
+}
+
 .featured-article-info p
 {
-    color: #ccc;
+    color: #fff;
     margin-bottom: 0;
 }
 
