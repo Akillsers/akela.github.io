@@ -288,7 +288,9 @@ h1
 
 h2
 {
-	font-size: 1.24rem;
+	font-size: 1.14rem;
+    font-weight: normal;
+    margin-bottom: 0.5em;
 }
 
 .contrast
@@ -662,7 +664,7 @@ h2 .article-heading
 body
 {
     background-color: #fff;
-    font-family: Roboto, serif;
+    font-family: Roboto, sans-serif;
     margin: 8px 0 8px 0;
 }
 
