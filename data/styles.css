@@ -60,6 +60,11 @@
     margin-bottom: 0;
 }
 
+.no-bullets
+{
+    list-style-type: none;
+}
+
 .action-button
 {
     display: block;
