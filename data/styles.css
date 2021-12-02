@@ -122,11 +122,6 @@
     width: 75%;
 }
 
-a:active
-{
-    color: hotpink;
-}
-
 .blog-listing-right
 {
     text-align: right;
@@ -885,6 +880,11 @@ a:hover
 {
     margin-left: 2rem;
     text-align: center;
+}
+
+a:active
+{
+    color: hotpink;
 }
 
 main
