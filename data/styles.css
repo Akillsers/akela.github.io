@@ -77,13 +77,34 @@
 
 .blog-listing .container
 {
-    margin-bottom: 1rem;
+    /*padding-bottom: 0.7rem;*/
+    
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    padding-top: 0.35rem;
+    padding-bottom: 0.35rem;
+    margin-bottom: 0.35rem;
+}
+
+.blog-listing .container:hover
+{
+    background-color: rgb(235,235,235);
+    border-left: 3px solid #333;
+    margin-left: -13px;
+}
+
+.blog-listing-header
+{
+    margin-top: 0.6rem;
+    margin-bottom: 0.75rem;
 }
 
 .blog-listing .blog-title
 {
     margin-bottom: 0.15rem;
-    font-size: 1.08 rem;
 }
 
 .blog-listing .blog-tagline
@@ -95,7 +116,7 @@
 .blog-listing-left
 {
     float: left;
-    width: 50%;
+    width: 75%;
 }
 
 .blog-listing-right
@@ -106,7 +127,7 @@
 .blog-listing .blog-date
 {
     font-size: 0.75rem;
-    color: #777;
+    color: rgb(110, 110, 110);
 }
 
 .blog-listing, .blog-listing:hover
@@ -811,11 +832,6 @@ ul
 .clickable:hover
 {
     text-decoration: underline;
-}
-
-a:active, .clickable:active
-{
-    color: hotpink;
 }
 
 .article-item a:hover, .featured-article a:hover
