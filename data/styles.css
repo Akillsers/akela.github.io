@@ -75,6 +75,45 @@
     margin-bottom: 1rem;
 }
 
+.blog-listing .container
+{
+    margin-bottom: 1rem;
+}
+
+.blog-listing .blog-title
+{
+    margin-bottom: 0.15rem;
+    font-size: 1.08 rem;
+}
+
+.blog-listing .blog-tagline
+{
+    font-size: 0.88rem;
+    color: #444;
+}
+
+.blog-listing-left
+{
+    float: left;
+    width: 50%;
+}
+
+.blog-listing-right
+{
+    text-align: right;
+}
+
+.blog-listing .blog-date
+{
+    font-size: 0.75rem;
+    color: #777;
+}
+
+.blog-listing, .blog-listing:hover
+{
+    text-decoration: none;
+}
+
 .action-button:hover
 {
     text-decoration: underline;
