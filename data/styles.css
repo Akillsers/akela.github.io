@@ -45,7 +45,7 @@
     user-select: none;
 }
 
-.featured-article-info small
+.publish-date
 {
     margin-top: 0.3rem;
     color: #ccc;
@@ -596,7 +596,7 @@ hr.version-divider
 {
     padding-left: 1.2em;
     padding-right: 1.2em;
-    max-width: 58.5rem;
+    max-width: 50.5rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -621,6 +621,21 @@ hr.version-divider
     /*This is currently the same as header-title*/
     margin-bottom: 0;
     font-size: 2.4rem;
+}
+
+.front-article-header
+{
+    margin-bottom: 1em;
+}
+
+.front-title
+{
+    margin-bottom: 0;
+}
+
+.front-dateline
+{
+    color: #ccc;
 }
 
 .article-info
