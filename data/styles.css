@@ -103,6 +103,7 @@
 {
     margin-top: 0.6rem;
     margin-bottom: 0.75rem;
+    font-weight: bolder;
 }
 
 .blog-listing .blog-title
@@ -690,7 +691,7 @@ hr.version-divider
 {
     /*This is currently the same as header-title*/
     margin-bottom: 0;
-    font-size: 2.4rem;
+    /*font-size: 2.4rem;*/
 }
 
 .front-article-header
