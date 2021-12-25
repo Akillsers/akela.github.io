@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <title>A Message From Elf Sam</title>
+    <link rel="stylesheet" type="text/css" href="data/sam-styles.css">
+    <link rel="icon" href="data/elf-hat.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+    <script src="data/sams-present.js"></script>
+  </head>
+  <body class="dark" onload="doc_loaded()">
+      <script src="data/sams-present.js"></script>
+  <header class="container" style="visibility: hidden">
+    <div class="header">
+        <div class="header-title"><a href="index.html">Akela Ng</a></div>
+        <nav class="header-links">
+            <a href="musings.html">Blog</a>
+            <a href="about.html">About</a>
+        </nav>
+    </div>
+    <hr class="header-bottom-separator">
+  </header>
+  
+  <main class="inner">
+    <div class="spacer"></div>
+
+    <div class="message">
+    <div id="video-overlay">
+    <div id="play-button" class="centered" style="visibility: hidden;">    <div><img id="img-icon" src="data/play-icon.svg"></div><h1 id="message-text">A message from Elf Sam</h1>  </div>
+    <div id="timer-display" class="centered" style="visibility: hidden">  <p>Santa got into an accident.<br> Elf Sam will be back soon.</p> <div><h1 id="timer">17h 34m 3s</h1></div>  </div>
+    </div>
+    <video id="play-target" playsinline onended="on_video_end()" style="opacity: 0;"><source  src="data/message1.webm" type="video/webm"></video>
+    </div>
+    </div>
+    <div id="volume-bar" class="container">
+    <div id="volume-icon"><img src="data/volume-icon.svg"></div>
+    <input type="range" class="slider" id="volume-control" oninput="update_volume()" min="1" max="100" value="100"></input>
+    </div>
+    <div id="interaction-pane"><p id="interaction-message" onclick="open_present();">OPEN YOUR PRESENT</p></div>
+  </main>
+    
+
+  
+  </body>
+</html>

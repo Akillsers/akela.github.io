@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+body
+{
+    background-color: #fff;
+    font-family: 'Lora', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.dark
+{
+    background-color: rgb(22,22,22);
+    color: white;
+}
+
+h1
+{
+    margin-bottom: 0.67em;
+    font-size: 1.6rem;
+}
+
+p
+{
+    margin-bottom:1em;
+    line-height: 1.5em;
+    font-size: 1.08rem;
+}
+
+.inner
+{
+    max-width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.message
+{
+  position: relative;
+}
+
+video
+{
+  width: 100%;
+  display: block;
+  pointer-events: none;
+}
+
+.centered
+{   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    text-align: center;
+}
+
+#play-button img
+{
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 0.4rem;
+}
+
+#video-overlay
+{
+    position: absolute;
+    
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;    
+    
+    background: rgba(0,0,0,0);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#img-icon
+{
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.hoverable:hover
+{
+    cursor: pointer;
+}
+
+video::-webkit-media-controls {
+  display:none !important;
+}
+
+#interaction-pane
+{
+    text-align: center;
+    margin-top: 1rem;
+    display: none;
+}
+
+#interaction-pane p:hover
+{
+    cursor: pointer;
+}
+
+#volume-icon
+{
+    display: inline-block;
+    margin-right: 3px;
+}
+
+
+#volume-icon img
+{
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    display: inline-block;
+}
+#volume-bar
+{
+    background-color: rgb(18, 18, 18);
+    visibility: hidden;
+}
+
+.slider {
+  -webkit-appearance: none;
+  vertical-align: middle;
+  height: 6px;
+  border-radius: 5px;  
+  background: #999;
+  outline: none;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%; 
+  background: #999;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #999;
+  cursor: pointer;
+}
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
